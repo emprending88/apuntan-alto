@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculadoras de caída y riesgo para criptomonedas | Apuntan Alto</title>
+<meta name="description" content="Dos calculadoras gratuitas: cuánto tiene que subir una inversión para recuperarse de una caída y cuánto afectaría a tu patrimonio.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0E3B31">
+<meta name="google-adsense-account" content="ca-pub-9286635308991765">
+<link rel="canonical" href="https://cripto.emprending.online/herramientas/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Apuntan Alto">
+<meta property="og:title" content="Calculadoras de caída y riesgo para criptomonedas | Apuntan Alto">
+<meta property="og:description" content="Dos calculadoras gratuitas: cuánto tiene que subir una inversión para recuperarse de una caída y cuánto afectaría a tu patrimonio.">
+<meta property="og:url" content="https://cripto.emprending.online/herramientas/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/site.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9286635308991765" crossorigin="anonymous"></script>
+
+</head><body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="/" aria-label="Apuntan Alto, inicio"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0E3B31"/><path d="M4 26 13 9l5 8 3-5 7 14z" fill="#fff"/><path d="M13 9V3l6 2.2-6 2.2z" fill="#FF7A3D"/></svg><span>Apuntan Alto</span></a>
+<nav class="nav" aria-label="Principal"><ul><li><a href="/criptomonedas/">Criptomonedas</a></li><li><a href="/guias/">Guías</a></li><li><a href="/herramientas/" aria-current="page">Herramientas</a></li><li><a href="/sobre-la-web/">Sobre la web</a></li></ul></nav>
+</div></header>
+<main id="contenido">
+<header class="page-head"><div class="wrap"><nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/">Inicio</a></li><li aria-current="page">Herramientas</li></ol></nav>
+<h1>Herramientas</h1><p class="art-lead">Para ver, con tus números, lo que cuesta una caída.</p></div></header>
+<div class="pagina"><div class="wrap">
+
+<section class="tool" id="caida" aria-labelledby="t1"><div>
+<h2 class="tool-title" id="t1">Caída y recuperación</h2>
+<p class="tool-intro">Si una inversión pierde una parte de su valor, tiene que subir más de esa parte para recuperarse. Comprueba cuánto con tus números.</p>
+<div class="hoja" id="calc-caida">
+<div class="campo"><label for="a-inv">Cantidad invertida (€)</label><input id="a-inv" type="number" inputmode="decimal" min="0" step="100" value="5000"></div>
+<div class="campo"><label for="a-caida">Caída del valor (%)</label><input id="a-caida" type="number" inputmode="decimal" min="1" max="99" step="1" value="50">
+<input id="a-caida-r" type="range" min="1" max="99" step="1" value="50" aria-label="Ajustar la caída con un control deslizante"></div>
+</div></div>
+<div class="resultado" aria-live="polite">
+<p class="res-label">Para volver al punto de partida necesitas</p><p class="cifra" id="a-sube">+100 %</p>
+<ul class="desglose"><li><span>Tu inversión valdría</span><b id="a-valor">2.500 €</b></li><li><span>Habrías perdido</span><b id="a-perdida">2.500 €</b></li><li><span>Tendrías que ganar</span><b id="a-ganar">2.500 €</b></li></ul>
+<p class="res-nota" id="a-frase"></p>
+<table class="tabla-rec"><caption>Subida necesaria según la caída</caption><thead><tr><th scope="col">Caída</th><th scope="col">Subida necesaria</th></tr></thead><tbody id="a-tabla"></tbody></table>
+</div></section>
+
+<section class="tool" id="patrimonio" aria-labelledby="t2"><div>
+<h2 class="tool-title" id="t2">Impacto en tu patrimonio</h2>
+<p class="tool-intro">Lo que importa no es cuánto cae una criptomoneda, sino cuánto pesa en el total de lo que tienes. Simula un escenario de caída.</p>
+<div class="hoja" id="calc-patrimonio">
+<div class="campo"><label for="b-pat">Patrimonio total (€)</label><span class="ayuda">Ahorros, inversiones, inmuebles líquidos… lo que sumaría tu patrimonio.</span><input id="b-pat" type="number" inputmode="decimal" min="0" step="1000" value="50000"></div>
+<div class="campo"><label for="b-pct">Parte en criptomonedas: <span class="val" id="b-pct-v">10 %</span></label><input id="b-pct" type="range" min="0" max="100" step="1" value="10"></div>
+<div class="campo"><label for="b-caida">Caída hipotética de las criptomonedas: <span class="val" id="b-caida-v">70 %</span></label><input id="b-caida" type="range" min="1" max="99" step="1" value="70"></div>
+</div></div>
+<div class="resultado" aria-live="polite">
+<p class="res-label">Perderías, sobre el total de tu patrimonio</p><p class="cifra" id="b-imp">7 %</p>
+<div class="barra" aria-hidden="true"><i class="b-ok" id="b-ok" style="width:93%"></i><i class="b-perdida" id="b-per" style="width:7%"></i></div>
+<div class="leyenda"><span>Lo que conservas</span><span>Lo que pierdes</span></div>
+<ul class="desglose"><li><span>Invertido en criptomonedas</span><b id="b-en-cripto">5.000 €</b></li><li><span>Pérdida en euros</span><b id="b-perdida">3.500 €</b></li><li><span>Patrimonio después de la caída</span><b id="b-despues">46.500 €</b></li></ul>
+<p class="res-nota" id="b-frase"></p>
+</div></section>
+
+<div class="prose"><h2 id="aviso-herramientas">Cómo usar estos resultados</h2>
+<p>Son cálculos ilustrativos y no incluyen comisiones ni impuestos. No predicen lo que ocurrirá: sirven para ver, antes de invertir, qué pasaría en un escenario malo. Si el resultado te incomoda, es una buena señal para reducir la cantidad o esperar. Más ideas en la guía sobre <a href="/guias/gestionar-el-riesgo-en-criptomonedas/">cómo gestionar el riesgo</a>.</p></div>
+</div></div>
+</main><footer class="site-footer"><div class="wrap">
+<div class="riesgo" role="note"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 30 28H2z" fill="#FF7A3D" stroke="#12342B" stroke-width="2" stroke-linejoin="round"/><path d="M16 12v8" stroke="#12342B" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="24" r="1.8" fill="#12342B"/></svg><p>Las criptomonedas son muy volátiles y no están garantizadas por ningún banco central. Puedes perder todo el dinero que inviertas. Nada de esta web es una recomendación de compra o venta.</p></div>
+<div class="foot-grid">
+<div><a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0E3B31"/><path d="M4 26 13 9l5 8 3-5 7 14z" fill="#fff"/><path d="M13 9V3l6 2.2-6 2.2z" fill="#FF7A3D"/></svg><span>Apuntan Alto</span></a>
+<p class="foot-blurb">Criptomonedas con potencial, contadas con sus riesgos. Sin precios objetivo y sin enlaces de afiliación.</p></div>
+<div><p class="foot-h">Explora</p><ul>
+<li><a href="/criptomonedas/">Fichas de criptomonedas</a></li><li><a href="/guias/">Guías</a></li><li><a href="/herramientas/">Herramientas</a></li><li><a href="/sobre-la-web/">Sobre la web</a></li></ul></div>
+<div><p class="foot-h">Información legal</p><ul>
+<li><a href="/contacto/">Contacto</a></li><li><a href="/aviso-legal/">Aviso legal</a></li><li><a href="/privacidad/">Privacidad</a></li><li><a href="/cookies/">Cookies</a></li><li><a href="/cookies/" data-cookie-prefs>Preferencias de cookies</a></li></ul></div>
+</div>
+<div class="foot-legal"><p>Contenido informativo. No constituye asesoramiento financiero, fiscal ni legal. Revisado en septiembre de 2026.</p><p>© 2026 Apuntan Alto</p></div>
+</div></footer>
+<script src="/static/js/site.js" defer></script>
+</body>
+</html>

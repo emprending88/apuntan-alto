@@ -1,0 +1,24 @@
+APUNTAN ALTO - web lista para GitHub Pages
+==========================================
+
+ANTES DE SUBIRLA (imprescindible)
+Abre estos dos archivos con el Bloc de notas y usa Editar > Reemplazar (Ctrl+H)
+para cambiar, en cada uno, estos tres textos por tus datos reales:
+  TU_NOMBRE      -> tu nombre y apellidos
+  TU_NIF         -> tu NIF
+  TU_DOMICILIO   -> tu domicilio
+Archivos:  aviso-legal/index.html   y   privacidad/index.html
+
+SUBIRLA
+1. Crea un repositorio nuevo en GitHub (Public), por ejemplo "apuntan-alto".
+2. Sube el CONTENIDO de esta carpeta (index.html, CNAME, static, etc.), no la
+   carpeta entera. index.html debe quedar en la raiz del repositorio.
+3. Settings > Pages > Deploy from a branch > main / (root) > Save.
+4. En Namecheap > Advanced DNS anade un registro CNAME:
+   Host: cripto   Value: TU_USUARIO.github.io   TTL: Automatic
+5. En GitHub > Settings > Pages > Custom domain: cripto.emprending.online > Save.
+   Cuando termine la comprobacion de DNS, marca "Enforce HTTPS".
+
+El archivo CNAME ya contiene cripto.emprending.online.
+ads.txt ya incluye el ID de editor de AdSense (pub-9286635308991765): comprueba
+que coincide con el de tu cuenta.
